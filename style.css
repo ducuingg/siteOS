@@ -1,21 +1,61 @@
 body{
-    background-image: url("images/fondapple.jpg");
+    background-image: url("images/fond.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:inherit;
     overflow: hidden;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #navbarheader{
+    display: flex;
+    justify-content: center;
     width:100%;
     height: 1.5em;
-    background-color: rgb(210, 207, 207);
-    -webkit-box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 10px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 10px 5px 0px rgba(50, 50, 50, 0.75);
+    background-color: rgb(71, 70, 70);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
+
+
+#heure{
+    padding-top: 0.2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 1px;
+}
+#off{
+    padding-top: 0.2em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right:0.9em;
+}
+#sessionoff{
+    display:block;
+    position: absolute;
+    width: 12em;
+    height: 3em;
+    background-color: rgb(71, 70, 70);
+    color: #fff;
+    font-size: 1em;
+    right:0;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: 1.4em;
+    z-index: -1;
+    opacity: 1;
+    transition: 1s ease-in-out;
+
+}
+.sessionoffdisplay{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -26,8 +66,8 @@ footer{
     position: relative;
     margin: auto;
     margin-top: 50em;
-    width: 80%;
-    height: 7em;
+    width: 40%;
+    height: 6em;
     background-color: white;
     opacity: 0.4;
     border-radius: 5px;
@@ -36,17 +76,35 @@ footer{
 
 }
 
-img{
-    width: 5em;
-    left:12em;
-    margin: auto;
-}
-
 #icones{
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
     margin-bottom: 2em;
-    gap: 3em;
+    gap: 4em;
+}
+#icones img{
+    width: 4em;
+    transition: 0.3s ease;
+}
+#icones i{
+    font-size: 4em;
+    transition: 0.3s ease;
+}
+#icones img:hover{
+    transform: scale(1.2) translateY(-1.3em);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#icones img:active{
+    filter:contrast(2);
+}
+#icones i:hover{
+    transform: scale(1.2) translateY(-0.4em);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#icones i:active{
+    filter:contrast(2);
 }
