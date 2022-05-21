@@ -86,12 +86,14 @@ footer{
 }
 
 #icones{
+    width:30%;
+    height: auto;
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
     margin-bottom: 2em;
-    gap: 4em;
+    gap: 3.5em;
 }
 #icones img{
     width: 4em;
@@ -139,7 +141,7 @@ footer{
     color: #ffffff;
 }
 .fenetre i:hover{
-    color: #fba2a2;
+    color: #ad4545;
 }
 /* -----------------FORMULAIRE------------------- */
 
