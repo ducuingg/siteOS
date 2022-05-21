@@ -14,18 +14,33 @@
 <body>
     <header>
         <div id="navbarheader">
+            <div id="fond">Fond d'écran</div>
             <div id="heure"></div>
             <div id="off"><i class="fa-solid fa-power-off"></i></div>
-            <div id="sessionoff">Quitter la session</div>        
+            <div id="sessionoff"><a href="https://www.google.fr">Quitter la session</a></div>        
         </div>
     </header>
+    <form action ="" method="POST">
+        <div class="fenetre">Formulaire de contact<i class="fa-solid fa-circle-xmark"></i></div>
+        <div id="champs">
+            <input type="text" name ="prenom" id="nom" placeholder="Prénom">
+        <!-- <label for="nom">Nom</label> -->
+            <input type ="text" name ="nom" id="prenom" placeholder="Nom" required>
+            <!-- <label for="mail">Mail</label> -->
+        <input type="text" name ="mail" id="mail" placeholder="Mail" required>
+        </div>
+        <textarea rows="10" cols="50" placeholder="Message" required></textarea>
+        <input type="submit" value ="Envoyer" id="envoi">
+        <!-- <i class="fa-regular fa-square-check"></i> -->
+    </form>
+ 
     <footer>
         <div id="icones"> 
             <img src="images/file.png" alt="dossier">
-            <img src="images/file.png" alt="dossier">
+            <i class="fa-solid fa-file-code"></i>
             <i class="fa-solid fa-id-badge"></i>
-            <a href="https://github.com/ducuingg"><img src="images/git.png" target="_blank" alt="Github" title="Github Guillaume Ducuing"></a>
-            <a href="https://www.linkedin.com/in/guillaume-ducuing-a05ab6212/"><img src="images/linkedin.png" target="_blank" alt="Linkedin" title="Linkedin Guillaume Ducuing"></a>
+            <a href="https://github.com/ducuingg" target="_blank"><img src="images/git.png" alt="Github" title="Github Guillaume Ducuing"></a>
+            <a href="https://www.linkedin.com/in/guillaume-ducuing-a05ab6212/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" title="Linkedin Guillaume Ducuing"></a>
             <a href="https://www.google.fr" target="_blank"><img src="images/chrome.png" alt="Navigateur chrome" title="Google Chrome"></a>
         
         </div>

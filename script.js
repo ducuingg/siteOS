@@ -10,9 +10,12 @@ function horaire(){
 }
 horaire();
 
+function toggleoff(){
+
 const off = document.querySelector("#off");
 const sessionoff = document.querySelector('#sessionoff');
 off.addEventListener("click",()=>{
-        sessionoff.classList.toggle('sessionoffdisplay');
-    
+        sessionoff.classList.toggle("sessionoffdisplay");   
 })
+}
+toggleoff();
