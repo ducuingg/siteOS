@@ -11,11 +11,32 @@ function horaire(){
 horaire();
 
 function toggleoff(){
-
-const off = document.querySelector("#off");
-const sessionoff = document.querySelector('#sessionoff');
-off.addEventListener("click",()=>{
+    const off = document.querySelector("#off");
+    const sessionoff = document.querySelector('#sessionoff');
+        off.addEventListener("click",()=>{
         sessionoff.classList.toggle("sessionoffdisplay");   
 })
 }
 toggleoff();
+
+function fermeture(){
+    let croix = document.querySelector('.croix');
+    let form = document.querySelector('form');
+        croix.addEventListener('click',()=>{
+        form.style.display="none";
+})
+}
+fermeture();
+
+function ouverture(){
+    let ouvreFenetre = document.querySelectorAll('.ouvreFenetre');
+    for(let i=0;i<ouvreFenetre.length;i++){
+        ouvreFenetre[i].addEventListener('click',()=>{
+            if(i == 2){
+                let form = document.querySelector('form');
+                form.style.display="block";
+            }
+        })
+    }
+}
+ouverture();
