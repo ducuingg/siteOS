@@ -4,7 +4,7 @@ a{
 }
 
 body{
-    background-image: url("images/fond.png");
+    background-image: url("images/fond.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:inherit;
@@ -17,19 +17,13 @@ body{
     display: flex;
     justify-content: center;
     width:100%;
-    height: 1.5em;
-    background-color: rgb(71, 70, 70);
+    height: 2.4em;
+    background-color: rgb(37, 36, 36);
     -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-#fond{
-    position: absolute;
-    color: rgb(255, 255, 255);
-    left: 0.9em;
-    padding-top: 0.2em;
-}
 
 #heure{
     padding-top: 0.2em;
@@ -38,33 +32,35 @@ body{
     letter-spacing: 1px;
 }
 #off{
-    padding-top: 0.2em;
     color: rgb(255, 255, 255);
     position: absolute;
-    right:0.9em;
+    right:0;
     z-index: 1;
 }
-#sessionoff{
-    display:block;
+.fa-circle-info{
+    color: rgb(255, 255, 255);
     position: absolute;
-    width: 12em;
-    height: 3em;
-    background-color: rgb(71, 70, 70);
-    color: #fff;
-    font-size: 1em;
-    right:0;
-    padding-top: 1em;
-    padding-left: 1em;
-    margin-top: 1.4em;
-    transition: 0.6s ease-in-out;
+    left: 0.5em;
+    padding-top: 0.2em;
+    font-size: 1.4em;
+    cursor: pointer;
 }
-.sessionoffdisplay{
-    height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    transform: translateY(-4em);
-    z-index: -1;
+#cv{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin:2em;
+    margin-top: 10em;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-top: 0.5em;
 }
+.fa-file-arrow-down{
+    color: black;
+    font-size: 3.5em;
+    cursor: pointer;
+}
+
 footer{
     display: flex;
     justify-content: center;
@@ -76,23 +72,23 @@ footer{
     margin: auto;
     margin-top: 50em;
     width: 40%;
-    height: 6em;
+    height: 5em;
     background-color: white;
-    opacity: 0.4;
-    border-radius: 5px;
+    opacity: 0.15;
+    border-radius: 10px;
     z-index: -1;
     margin-bottom: 1em;
 
 }
 
 #icones{
-    width:30%;
+    width:20%;
     height: auto;
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     gap: 3.5em;
 }
 #icones img{
@@ -102,6 +98,7 @@ footer{
 #icones i{
     font-size: 4em;
     transition: 0.3s ease;
+    color: black;
 }
 #icones img:hover{
     transform: scale(1.2) translateY(-1.3em);
@@ -109,7 +106,7 @@ footer{
     cursor: pointer;
 }
 #icones img:active{
-    filter:contrast(2);
+    filter:blur(2px);
 }
 #icones i:hover{
     transform: scale(1.2) translateY(-0.4em);
@@ -117,14 +114,14 @@ footer{
     cursor: pointer;
 }
 #icones i:active{
-    filter:contrast(2);
+    filter:blur(2px);
 }
 
 /* FENETRE */
 .fenetre{
     position: absolute;
     width: 100%;
-    height: 1.5em;
+    height: 2.5em;
     top:0;
     right: 0;
     border-radius: 5px 5px 0px 0px ;
@@ -143,17 +140,42 @@ footer{
 .fenetre i:hover{
     color: #ad4545;
 }
+
+/*-----------------PROJETS-------------------------*/
+.offcanvas-body, .offcanvas-header{
+    background-color: rgb(37, 36, 36);
+}
+.btn-close{
+    background-color: #ffffff;
+}
+
+#conteneur{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    gap:4em
+}
+.work{
+    opacity: 1;
+    z-index: 2;
+    position:relative;
+    border-radius: 20px;
+    width: 20em;
+    height: 20em;
+    background-color: #fcfcfc;
+}
 /* -----------------FORMULAIRE------------------- */
 
 
 form{
     position: absolute;
-	display: block;
+	display: none;
     margin-top: 3em;
     margin-left: 27%;
     margin-right: 25%;
 	width: 50em;
-	height: 35em;
+	height: 38.5em;
 	background-color: #2f2f2f;
 	margin-bottom: 5em;
 	color: white;
@@ -174,10 +196,10 @@ form i{
 }
 input{
 	display: inline-block;
-	width: 12.5em;
+	width: 10.5em;
 	padding: 0.4em;
 	padding-left: 0.5em;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 	margin: 2em;
 	border: none;
 	border-radius: 8px;
@@ -210,12 +232,12 @@ input{
 textarea{
 	display: flex;
 	width: 80%;
-	height: 30em;
+	height: 25em;
 	margin:auto;
 	margin-bottom: 1em;
 	padding:0.5em;
 	border: none;
 	border-radius: 8px;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 	box-shadow:inset 7px 6px 5px -2px rgba(50, 50, 50, 0.75);
 }

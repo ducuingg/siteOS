@@ -10,14 +10,6 @@ function horaire(){
 }
 horaire();
 
-function toggleoff(){
-    const off = document.querySelector("#off");
-    const sessionoff = document.querySelector('#sessionoff');
-        off.addEventListener("click",()=>{
-        sessionoff.classList.toggle("sessionoffdisplay");   
-})
-}
-toggleoff();
 
 function fermeture(){
     let croix = document.querySelector('.croix');
@@ -36,7 +28,27 @@ function ouverture(){
                 let form = document.querySelector('form');
                 form.style.display="block";
             }
+            // if(i == 1){
+            //     let form = document.querySelector('form');
+            //     form.style.display="block";
+            // }
         })
     }
 }
 ouverture();
+
+function toast(){
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    const toast = new bootstrap.Toast(toastLiveExample);
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        toast.show();
+      })
+    }
+    toast.show();
+}
+toast();
+
+
+
