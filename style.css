@@ -94,11 +94,13 @@ footer{
 #icones img{
     width: 4em;
     transition: 0.3s ease;
+    background-color: ;
 }
 #icones i{
     font-size: 4em;
     transition: 0.3s ease;
     color: black;
+    background-color: #fff;
 }
 #icones img:hover{
     transform: scale(1.2) translateY(-1.3em);
