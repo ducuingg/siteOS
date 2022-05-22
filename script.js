@@ -14,12 +14,14 @@ horaire();
 function fermeture(){
     let croix = document.querySelectorAll('.croix');
     let form = document.querySelector('form');
+    let iconecontact = document.querySelector('.fa-id-badge');
     let finssession = document.querySelector('#finsession');
         for(let i = 0; i<croix.length;i++){
             croix[i].addEventListener('click',()=>{
                 if(i == 0){
                     form.style.display="none";
                     form.style.zIndex="0";
+                    iconecontact.style.transform="translateY(0em)";
                 }
                 if(i == 1){
                     finssession.style.display = 'none';
@@ -40,7 +42,7 @@ function ouverture(){
                 let form = document.querySelector('form');
                 form.style.display="block";
                 form.style.zIndex="1";
-                // iconecontact.style
+                iconecontact.style.transform="scale(1.2) translateY(-0.4em)";
             }
         })
     }
