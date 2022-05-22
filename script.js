@@ -12,11 +12,22 @@ horaire();
 
 
 function fermeture(){
-    let croix = document.querySelector('.croix');
+    let croix = document.querySelectorAll('.croix');
     let form = document.querySelector('form');
-        croix.addEventListener('click',()=>{
-        form.style.display="none";
-})
+    let finssession = document.querySelector('#finsession');
+        for(let i = 0; i<croix.length;i++){
+            croix[i].addEventListener('click',()=>{
+                if(i == 0){
+                    form.style.display="none";
+                    form.style.zIndex="0";
+                }
+                if(i == 1){
+                    finssession.style.display = 'none';
+                    finssession.style.zIndex ='0';
+            }
+        })    
+    }
+        
 }
 fermeture();
 
@@ -27,6 +38,7 @@ function ouverture(){
             if(i == 2){
                 let form = document.querySelector('form');
                 form.style.display="block";
+                form.style.zIndex="1";
             }
             // if(i == 1){
             //     let form = document.querySelector('form');
@@ -36,6 +48,17 @@ function ouverture(){
     }
 }
 ouverture();
+
+function finssession(){
+    let quitter = document.querySelector('.leave');
+    let finssession = document.querySelector('#finsession');
+    quitter.addEventListener('click',()=>{
+        finssession.style.display = 'block';
+        finssession.style.zIndex ='1';
+        
+    })
+}
+finssession();
 
 function toast(){
     const toastTrigger = document.getElementById('liveToastBtn')
@@ -49,6 +72,3 @@ function toast(){
     toast.show();
 }
 toast();
-
-
-

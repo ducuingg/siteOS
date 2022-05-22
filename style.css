@@ -11,6 +11,7 @@ body{
     overflow: hidden;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+  
 }
 
 #navbarheader{
@@ -19,9 +20,9 @@ body{
     width:100%;
     height: 2.4em;
     background-color: rgb(37, 36, 36);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 
@@ -54,120 +55,36 @@ body{
     font-size: 1.1em;
     font-weight: 900;
     padding-top: 0.5em;
+    z-index: 1;
 }
 .fa-file-arrow-down{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 3.5em;
     cursor: pointer;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 1px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 1px 10x 0px rgba(50, 50, 50, 0.75);
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
+.fa-file-arrow-down:active{
+    filter: blur(2px);
 }
-#navbarfooter{
-    display: flex;
-    position: relative;
-    margin: auto;
-    margin-top: 50em;
-    width: 40%;
-    height: 5em;
-    background-color: white;
-    opacity: 0.15;
-    border-radius: 10px;
-    z-index: -1;
-    margin-bottom: 1em;
+/* ----------------------------------FIN SESSION--------------------------------------- */
 
-}
-
-#icones{
-    width:20%;
-    height: auto;
+#finsession{
     position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-self: flex-end;
-    margin-bottom: 1.5em;
-    gap: 3.5em;
-}
-#icones img{
-    width: 4em;
-    transition: 0.3s ease;
-    background-color: ;
-}
-#icones i{
-    font-size: 4em;
-    transition: 0.3s ease;
-    color: black;
-    background-color: #fff;
-}
-#icones img:hover{
-    transform: scale(1.2) translateY(-1.3em);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-#icones img:active{
-    filter:blur(2px);
-}
-#icones i:hover{
-    transform: scale(1.2) translateY(-0.4em);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-#icones i:active{
-    filter:blur(2px);
+    display: none;
+    margin-left: 22%;
+    margin-right: 28%;
+    margin-top: 10em;
+    width: 60%;
+    height: 30em;
+    background-color: #2f2f2f;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* FENETRE */
-.fenetre{
-    position: absolute;
-    width: 100%;
-    height: 2.5em;
-    top:0;
-    right: 0;
-    border-radius: 5px 5px 0px 0px ;
-    background-color: rgb(74, 74, 74);
-    text-align: center;
-    padding-top: 0.5em;
-    font-weight: bolder;
-}
-.fenetre i{
-    position: absolute;
-    font-size: 1.2em;
-    right: 0.4em;
-    top: 0.25em;
-    color: #ffffff;
-}
-.fenetre i:hover{
-    color: #ad4545;
-}
-
-/*-----------------PROJETS-------------------------*/
-.offcanvas-body, .offcanvas-header{
-    background-color: rgb(37, 36, 36);
-}
-.btn-close{
-    background-color: #ffffff;
-}
-
-#conteneur{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    gap:4em
-}
-.work{
-    opacity: 1;
-    z-index: 2;
-    position:relative;
-    border-radius: 20px;
-    width: 20em;
-    height: 20em;
-    background-color: #fcfcfc;
-}
-/* -----------------FORMULAIRE------------------- */
+/* ------------------------------------------------FORMULAIRE------------------- */
 
 
 form{
@@ -242,4 +159,124 @@ textarea{
 	border-radius: 8px;
 	letter-spacing: 0.2em;
 	box-shadow:inset 7px 6px 5px -2px rgba(50, 50, 50, 0.75);
+}
+
+/* ----------------------------------FOOTER--------------------------------------- */
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-self: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+}
+#navbarfooter{
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 5em;
+    background-color: white;
+    opacity: 0.15;
+    border-radius: 10px;
+    z-index: -1;
+    margin-bottom: 1em;
+
+}
+
+#icones{
+    width:20vw;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    margin-bottom: 0.6em;
+    gap: 4vw;
+    
+}
+#icones img{
+    width: 4em;
+    transition: 0.3s ease;
+
+}
+#icones i{
+    font-size: 4em;
+    transition: 0.3s ease;
+    color: black;
+}
+#icones img:hover{
+    transform: scale(1.2) translateY(-1.3em);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+}
+#icones img:active{
+    filter:blur(2px);
+}
+#icones i:hover{
+    transform: scale(1.2) translateY(-0.4em);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 0px 0px rgba(50, 50, 50, 0.75);
+}
+#icones i:active{
+    filter:blur(2px);
+}
+
+/* FENETRE */
+.fenetre{
+    position: absolute;
+    width: 100%;
+    height: 2.5em;
+    top:0;
+    right: 0;
+    border-radius: 5px 5px 0px 0px ;
+    background-color: rgb(74, 74, 74);
+    text-align: center;
+    padding-top: 0.5em;
+    font-weight: bolder;
+    color: #fff;
+}
+.fenetre i{
+    position: absolute;
+    font-size: 1.2em;
+    right: 0.4em;
+    top: 0.25em;
+    color: #ffffff;
+}
+.fenetre i:hover{
+    color: #ad4545;
+}
+
+/*-----------------PROJETS-------------------------*/
+.offcanvas-body, .offcanvas-header{
+    background-color: rgb(37, 36, 36);
+}
+.btn-close{
+    background-color: #ffffff;
+}
+
+#conteneur{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    gap:4em
+}
+.work{
+    opacity: 1;
+    z-index: 2;
+    position:relative;
+    border-radius: 20px;
+    width: 20em;
+    height: 20em;
+    background-color: #fcfcfc;
 }
