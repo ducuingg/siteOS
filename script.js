@@ -33,17 +33,15 @@ fermeture();
 
 function ouverture(){
     let ouvreFenetre = document.querySelectorAll('.ouvreFenetre');
+    let iconecontact = document.querySelector('.fa-id-badge');
     for(let i=0;i<ouvreFenetre.length;i++){
         ouvreFenetre[i].addEventListener('click',()=>{
             if(i == 2){
                 let form = document.querySelector('form');
                 form.style.display="block";
                 form.style.zIndex="1";
+                // iconecontact.style
             }
-            // if(i == 1){
-            //     let form = document.querySelector('form');
-            //     form.style.display="block";
-            // }
         })
     }
 }
