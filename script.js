@@ -49,16 +49,20 @@ function ouverture(){
 }
 ouverture();
 
-function finssession(){
+function ecranFinSession(){
     let quitter = document.querySelector('.leave');
     let finssession = document.querySelector('#finsession');
     quitter.addEventListener('click',()=>{
         finssession.style.display = 'block';
         finssession.style.zIndex ='1';
-        
+        setTimeout(finSession,5000);
     })
 }
-finssession();
+ecranFinSession();
+
+function finSession(){
+        document.location.href='https://www.google.fr';
+} 
 
 function toast(){
     const toastTrigger = document.getElementById('liveToastBtn')

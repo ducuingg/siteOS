@@ -84,6 +84,15 @@ body{
     box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
+#conteneurfin{
+    color: #fcfcfc;
+    margin-top: 8em;
+}
+#conteneurfin p{
+    font-size: 1.4em;
+    padding-top: 2em;
+    text-align: center;
+}
 /* ------------------------------------------------FORMULAIRE------------------- */
 
 
@@ -249,11 +258,11 @@ footer{
     position: absolute;
     font-size: 1.2em;
     right: 0.4em;
-    top: 0.25em;
+    top: 0.5em;
     color: #ffffff;
 }
 .fenetre i:hover{
-    color: #ad4545;
+    color: #ff3737;
 }
 
 /*-----------------PROJETS-------------------------*/
